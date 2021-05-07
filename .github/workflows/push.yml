@@ -1,4 +1,4 @@
-name: deploy to docker hub on success
+name: push
 
 on:
   push:
