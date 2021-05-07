@@ -9,3 +9,6 @@ up:
 
 down:
 	docker-compose down || true
+
+install:
+	npm install
