@@ -2,4 +2,4 @@
 [![Actions Status](https://github.com/badcookie/devops-for-programmers-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/badcookie/devops-for-programmers-project-lvl1/actions)
 
 ### Build status
-![Build status](https://github.com/badcookie/devops-for-programmers-project-lvl1/actions/workflows/push.yml/badge.svg)
+[![Build Status](https://github.com/badcookie/devops-for-programmers-project-lvl1/workflows/push/badge.svg)](https://github.com/badcookie/devops-for-programmers-project-lvl1/actions)
