@@ -12,4 +12,6 @@ services:
       - 80:80
       - 443:443
     volumes:
-    - ./services/caddy/Caddyfile:/etc/caddy/Caddyfile
+      - ./services/caddy/Caddyfile:/etc/caddy/Caddyfile
+    depends_on:
+      - app
