@@ -5,3 +5,11 @@ services:
     ports:
       - 8080:8080
     command: nodos server -h 0.0.0.0
+
+  caddy:
+    image: caddy:alpine
+    ports:
+      - 80:80
+      - 443:443
+    volumes:
+    - ./services/caddy/Caddyfile:/etc/caddy/Caddyfile
