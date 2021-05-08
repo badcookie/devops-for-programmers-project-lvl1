@@ -8,7 +8,9 @@ services:
       POSTGRES_USER: ${NODOS_DB_USERNAME}
 
   app:
-    build: .
+    build:
+      context: .
+      dockerfile: Dockerfile.production
     command: npm test
     volumes:
       - .:/app
