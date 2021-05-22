@@ -7,7 +7,8 @@ services:
       dockerfile: Dockerfile
     ports:
       - 8080:8080
-    command: npx nodos server -h 0.0.0.0
+    environment:
+      NODOS_HOST: 0.0.0.0
 
   caddy:
     image: caddy:alpine
