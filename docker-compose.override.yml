@@ -10,7 +10,8 @@ services:
     command: npx nodos server -h 0.0.0.0
 
   caddy:
-    image: caddy:alpine
+    image: caddy:2.4.1-alpine
+    container_name: hexlet_devops_server
     ports:
       - 80:80
       - 443:443

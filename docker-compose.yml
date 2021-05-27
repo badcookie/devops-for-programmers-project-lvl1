@@ -2,7 +2,8 @@ version: "3.9"
 
 services:
   db:
-    image: postgres
+    image: postgres:13.3
+    container_name: hexlet_devops_db
     environment:
       POSTGRES_PASSWORD: ${NODOS_DB_PASSWORD:-postgres}
       POSTGRES_USER: ${NODOS_DB_USERNAME:-postgres}
@@ -11,6 +12,8 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.production
+    container_name: hexlet_devops_app
+    image: hexlet_devops_app_image
     command: npm test
     volumes:
       - .:/app
