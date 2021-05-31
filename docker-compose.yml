@@ -15,7 +15,5 @@ services:
     container_name: hexlet_devops_app
     image: hexlet_devops_app_image
     command: npm test
-    volumes:
-      - .:/app
     depends_on:
       - db
